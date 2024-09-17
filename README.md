@@ -46,13 +46,13 @@ Open the `index.html` file in your preferred web browser to view the landing pag
 Link: https://adiga-real-estate.netlify.app/ 
 
 ## Screenshots
-**1. Hero Section**: 
+### **1. Hero Section**: 
 ![alt text](./img/readme/hero.png)
-**2. About Section**:
+### **2. About Section**:
 ![alt text](./img/readme/about.png)
-**3. Properties Section**:
+### **3. Properties Section**:
 ![alt text](./img/readme/properties.png)
-**4. Testimonial Section**:
+### **4. Testimonial Section**:
 ![alt text](./img/readme/testimonial.png)
-**5. Contact Section**:
+### **5. Contact Section**:
 ![alt text](./img/readme/contact.png)
