@@ -7,7 +7,7 @@ This is a simple and elegant landing page for a real estate project, built using
 
 Link: https://youtu.be/9srnyNC1e_o
 
-![alt text](./img/youtube-thumbnail.png)
+![alt text](./img/readme/youtube-thumbnail.png)
 
 ## Features
 * Clean Layout: A well-structured layout with sections for property listings, company information, and contact details.
@@ -47,12 +47,12 @@ Link: https://adiga-real-estate.netlify.app/
 
 ## Screenshots
 **1. Hero Section**: 
-![alt text](./img/hero.png)
+![alt text](./img/readme/hero.png)
 **2. About Section**:
-![alt text](./img/about.png)
+![alt text](./img/readme/about.png)
 **3. Properties Section**:
-![alt text](./img/properties.png)
+![alt text](./img/readme/properties.png)
 **4. Testimonial Section**:
-![alt text](./img/testimonial.png)
+![alt text](./img/readme/testimonial.png)
 **5. Contact Section**:
-![alt text](./img/contact.png)
+![alt text](./img/readme/contact.png)
