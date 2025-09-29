@@ -441,3 +441,36 @@ body {
 .social-link:active {
   color: #34c7c7;
 }
+
+.btn {
+  appearance: none;
+  border: 0;
+  border-radius: 9999px;
+  padding: 12px 20px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .06s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.btn-primary {
+  background-color: #00E5D4;  /* aqua */
+  color: #073B3A;             /* dark text */
+  box-shadow: 0 8px 20px rgba(0, 229, 212, .35);
+}
+
+.btn-primary:hover {
+  background-color: #06d2c2;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 229, 212, .45);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(0, 229, 212, .30);
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 16px;
+}
