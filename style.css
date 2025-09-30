@@ -520,4 +520,14 @@ a[href^="tel:"],
 a[href^="tel:"],
 .fixed-call-button,
 .button--phone { display:none !important; }
+/* hide Tally's auto bubble */
+.tally-open,
+.tally-widget { display:none !important; }
+
+/* place our custom "open as popup" button under the form, right aligned */
+#contact .contact-container .open-tally-inline {
+  display:flex; justify-content:flex-end;
+  margin:12px 0 0;
+}
+
 
