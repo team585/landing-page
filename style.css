@@ -474,3 +474,25 @@ body {
   padding: 14px 28px;
   font-size: 16px;
 }
+/* global */
+*{box-sizing:border-box}
+
+/* section/container */
+.section{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* form card */
+.lead-form{max-width:420px;width:100%;margin:0 auto}
+.lead-form input,
+.lead-form textarea,
+.lead-form select{width:100%}
+
+/* stop spillover into footer */
+.section--form{margin-bottom:56px}
+a[href^="tel:"],
+.button--phone,
+.fixed-call-button{display:none !important}
+[data-tally-open],
+.tally-open,
+.tally-inline-popup,
+.tally-widget{display:none !important}
+
