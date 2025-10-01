@@ -488,13 +488,6 @@ body {
 
 /* stop spillover into footer */
 .section--form{margin-bottom:56px}
-a[href^="tel:"],
-.button--phone,
-.fixed-call-button{display:none !important}
-[data-tally-open],
-.tally-open,
-.tally-inline-popup,
-.tally-widget{display:none !important}
 
 #contact .contact-container{
   display:block;
@@ -512,17 +505,6 @@ a[href^="tel:"],
   border:0;
   border-radius:12px;
   background:#fff;
-}
-
-[data-tally-open],
-.tally-widget,
-.tally-open,
-a[href^="tel:"],
-.fixed-call-button,
-.button--phone { display:none !important; }
-/* hide Tally's auto bubble */
-.tally-open,
-.tally-widget { display:none !important; }
 
 /* place our custom "open as popup" button under the form, right aligned */
 #contact .contact-container .open-tally-inline {
@@ -566,5 +548,6 @@ a[href^="tel:"],
     justify-content: center;
   }
 }
+
 
 
