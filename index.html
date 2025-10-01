@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Font: Lexend Deca -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,6 +13,16 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Eagle RE Properties — Get a Fair Cash Offer</title>
+
+    <!-- Minimal layout fixes to GUARANTEE the CTA is visible -->
+    <style>
+      .header{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+      .header .nav{margin-left:auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+      .nav-cta{display:inline-flex;align-items:center;padding:10px 16px}
+      @media(max-width:900px){.nav-cta{width:100%;justify-content:center}}
+      .cta-fab{position:fixed;right:16px;bottom:16px;background:#00bfa6;color:#fff;padding:12px 18px;border-radius:9999px;
+        text-decoration:none;font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,.2);z-index:9999}
+    </style>
   </head>
 
   <body>
@@ -28,20 +36,19 @@
         <a href="#properties" class="nav-links">Properties</a>
         <a href="#testimonial" class="nav-links">Testimonials</a>
         <a href="#contact" class="nav-links">Contact</a>
+
+        <!-- CTA INSIDE NAV -->
+        <a
+          href="#"
+          class="btn btn-primary nav-cta"
+          data-tally-open="mZ079A"
+          data-tally-layout="modal"
+          data-tally-auto-close="true"
+          data-tally-hide-title="true"
+          data-tally-overlay="true"
+          aria-haspopup="dialog"
+        >GET MY CASH OFFER</a>
       </nav>
-      <!-- Top CTA -->
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-tally-open="mZ079A"
-        data-tally-layout="modal"
-        data-tally-auto-close="true"
-        data-tally-hide-title="true"
-        data-tally-overlay="true"
-        aria-haspopup="dialog"
-      >
-        GET MY CASH OFFER
-      </button>
     </header>
 
     <main class="main">
@@ -360,6 +367,18 @@
         </address>
       </div>
     </footer>
+
+    <!-- Floating CTA as an absolute fallback -->
+    <a
+      class="cta-fab"
+      href="#"
+      data-tally-open="mZ079A"
+      data-tally-layout="modal"
+      data-tally-auto-close="true"
+      data-tally-hide-title="true"
+      data-tally-overlay="true"
+      aria-haspopup="dialog"
+    >GET MY CASH OFFER</a>
 
     <!-- Tally modal script -->
     <script defer src="https://tally.so/widgets/embed.js"></script>
