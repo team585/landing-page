@@ -530,4 +530,41 @@ a[href^="tel:"],
   margin:12px 0 0;
 }
 
+/* ---- Force the header CTA to be visible and laid out correctly ---- */
+.header {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;              /* allow the button to wrap on small screens */
+}
+
+.header .nav {
+  margin-left: auto;            /* push nav to the right */
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.header > .btn {
+  display: inline-flex !important;  /* override any hidden styles */
+  align-items: center;
+  padding: 10px 16px;
+}
+
+/* Make sure nothing in the header is clipping content */
+.header, .header * {
+  overflow: visible !important;
+}
+
+/* Mobile: put the CTA on its own row centered */
+@media (max-width: 860px) {
+  .header > .btn {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 
