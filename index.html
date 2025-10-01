@@ -2,139 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preload font -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap" />
+    <!-- Font: Lexend Deca -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!-- Existing site CSS -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Scoped upgrades -->
-    <link rel="stylesheet" href="assets/css/site.css" />
-
-    <title>Sell Your House Fast for Cash | Eagle RE Properties</title>
-    <meta name="description" content="We buy houses as-is. No repairs, no fees. Close on your timeline. Get a fair cash offer today." />
-
-    <!-- GA4 (replace G-XXXXXXX) -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXX'); // TODO: set real ID
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-
-    <!-- Meta Pixel (replace PIXEL_ID) -->
-    <script>
-      !(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})(window,
-      document,'script','https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init','PIXEL_ID'); // TODO: set real ID
-      fbq('track','PageView');
-      fbq('track','ViewContent');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
-
+    <title>Eagle RE Properties — Get a Fair Cash Offer</title>
   </head>
 
   <body>
     <!-- HEADER -->
     <header class="header">
-      <a href="#top" aria-label="Eagle RE Properties">
+      <a href="#">
         <img src="img/logo.webp?v=3" alt="Eagle RE Properties" class="header-logo" />
       </a>
-      <nav class="nav" aria-label="Main">
-        <a href="#lead" class="nav-links nav-primary">Get Offer</a>
+      <nav class="nav">
         <a href="#about" class="nav-links">About</a>
-        <a href="#how" class="nav-links">How It Works</a>
+        <a href="#properties" class="nav-links">Properties</a>
         <a href="#testimonial" class="nav-links">Testimonials</a>
-        <a href="#service-area" class="nav-links">Service Area</a>
         <a href="#contact" class="nav-links">Contact</a>
       </nav>
-      <!-- Click-to-call -->
-      <a class="header-phone" href="tel:+18643876051" aria-label="Call Eagle RE Properties">
-        <ion-icon name="call-outline" class="phone-ic"></ion-icon> 864-387-6051
-      </a>
+      <!-- Top CTA -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-tally-open="mZ079A"
+        data-tally-layout="modal"
+        data-tally-auto-close="true"
+        data-tally-hide-title="true"
+        data-tally-overlay="true"
+        aria-haspopup="dialog"
+      >
+        GET MY CASH OFFER
+      </button>
     </header>
 
-    <main id="top" class="main">
+    <main class="main">
       <!-- HERO -->
-      <section class="section hero" id="lead" aria-labelledby="hero-title">
+      <section class="section hero">
         <div class="hero-container">
-          <h1 class="primary-heading" id="hero-title" data-variant-a="Sell Your House Fast for Cash" data-variant-b="Cash Offer in 24 Hours. Close When You Want.">
-            Sell Your House Fast for Cash
-          </h1>
-          <p class="hero-description" id="hero-sub">
-            No repairs. No fees. Close on your timeline.
+          <h1 class="primary-heading">Sell Your Home for Cash — Fast & Fair</h1>
+          <p class="hero-description">
+            We buy houses in any condition. No repairs, no showings, no fees.
+            Get a fair cash offer and choose your closing date.
           </p>
 
-          <!-- Compact Above-the-fold Form -->
-          <form id="leadForm" class="lead-form" novalidate aria-label="Get My Cash Offer form">
-            <div class="form-row">
-              <label class="sr-only" for="full_name">Full name</label>
-              <input id="full_name" name="full_name" type="text" placeholder="Full name*" required autocomplete="name" />
-            </div>
-            <div class="form-row">
-              <label class="sr-only" for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="Phone*" required inputmode="tel" autocomplete="tel"
-                     pattern="^(\+1[\s\-]?)?(\(?\d{3}\)?[\s\-]?)\d{3}[\s\-]?\d{4}$" />
-            </div>
-            <div class="form-row">
-              <label class="sr-only" for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="Email (optional)" autocomplete="email" />
-            </div>
-            <div class="form-row">
-              <label class="sr-only" for="property_address">Property address</label>
-              <input id="property_address" name="property_address" type="text" placeholder="Property address*" required autocomplete="street-address" />
-            </div>
-            <div class="form-row two-col">
-              <div>
-                <label class="sr-only" for="timeline">Timeline</label>
-                <select id="timeline" name="timeline" aria-label="Timeline">
-                  <option value="ASAP">ASAP</option>
-                  <option value="7–14 days">7–14 days</option>
-                  <option value="15–30 days">15–30 days</option>
-                  <option value="30+ days">30+ days</option>
-                </select>
-              </div>
-              <div>
-                <label class="sr-only" for="property_condition">Property condition</label>
-                <select id="property_condition" name="property_condition" aria-label="Property condition">
-                  <option value="needs work">needs work</option>
-                  <option value="average">average</option>
-                  <option value="updated">updated</option>
-                </select>
-              </div>
-            </div>
+          <!-- Primary CTA: Tally modal -->
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-tally-open="mZ079A"
+            data-tally-layout="modal"
+            data-tally-auto-close="true"
+            data-tally-hide-title="true"
+            data-tally-overlay="true"
+            aria-haspopup="dialog"
+          >
+            GET MY CASH OFFER
+          </button>
 
-            <!-- Honeypot + timing -->
-            <input type="text" id="website" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <input type="hidden" id="form_started_at" name="form_started_at" value="">
-
-            <button id="leadSubmit" type="submit" class="btn btn-primary btn-lg" data-variant-a="Get My Cash Offer" data-variant-b="Get Cash Offer Now">
-              Get My Cash Offer
-            </button>
-            <p class="trust-chips" aria-live="polite">No repairs • No fees • Close on your timeline</p>
-            <p class="form-consent">By submitting, you agree to be contacted by phone, text, and email. Msg/data rates may apply.</p>
-
-            <div id="formErrors" class="form-errors" role="alert" aria-live="assertive"></div>
-          </form>
-
-          <!-- Call button (secondary) -->
-          <a href="tel:+18643876051" class="btn btn-outline" id="callHero">
+          <!-- Call button -->
+          <a href="tel:+15138223099" class="btn btn-primary btn-lg" style="margin-left:12px;">
             <ion-icon name="call-outline" style="vertical-align:middle;margin-right:6px;"></ion-icon>
-            864-387-6051
+            (513) 822-3099
           </a>
+
+          <p class="hero-prices">We’ll reach out within 24–48 hours.</p>
+          <h3 class="hero-price" style="opacity:.8">No agents • No commissions • Your timeline</h3>
         </div>
 
         <div class="hero-img-container">
@@ -142,32 +83,7 @@
         </div>
       </section>
 
-      <!-- HOW IT WORKS -->
-      <section class="section how" id="how" aria-labelledby="how-title">
-        <h2 class="secondary-heading" id="how-title">How It Works</h2>
-        <div class="how-steps">
-          <div class="how-step">
-            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-            <h3>Submit property</h3>
-            <p>Tell us about your house and timeline.</p>
-          </div>
-          <div class="how-step">
-            <ion-icon name="walk-outline" aria-hidden="true"></ion-icon>
-            <h3>Quick walkthrough</h3>
-            <p>Fast visit or virtual review. No obligations.</p>
-          </div>
-          <div class="how-step">
-            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-            <h3>Close on your date</h3>
-            <p>Pick the day. We handle title and paperwork.</p>
-          </div>
-        </div>
-        <div class="how-cta">
-          <a href="#lead" class="btn btn-primary">Get My Cash Offer</a>
-        </div>
-      </section>
-
-      <!-- ABOUT (unchanged copy, minor perf attrs) -->
+      <!-- ABOUT -->
       <section class="section" id="about">
         <h2 class="secondary-heading">We Handle Everything</h2>
         <p class="hero-description about-description">
@@ -176,7 +92,7 @@
 
         <div class="about-container">
           <div class="about-box">
-            <ion-icon name="home-outline" class="about-logo" aria-hidden="true"></ion-icon>
+            <ion-icon name="home-outline" class="about-logo"></ion-icon>
             <h3 class="about-heading">Accurate Valuation</h3>
             <p class="about-box-description">
               We analyze your property and local data to craft a fair, no-obligation cash offer.
@@ -184,7 +100,7 @@
           </div>
 
           <div class="about-box">
-            <ion-icon name="people-outline" class="about-logo" aria-hidden="true"></ion-icon>
+            <ion-icon name="people-outline" class="about-logo"></ion-icon>
             <h3 class="about-heading">Clear Terms</h3>
             <p class="about-box-description">
               No hidden fees or surprises. Just straightforward options designed around your goals.
@@ -192,19 +108,16 @@
           </div>
 
           <div class="about-box">
-            <ion-icon name="newspaper-outline" class="about-logo" aria-hidden="true"></ion-icon>
+            <ion-icon name="newspaper-outline" class="about-logo"></ion-icon>
             <h3 class="about-heading">Streamlined Closing</h3>
             <p class="about-box-description">
               Pick your closing date and we coordinate the paperwork with a trusted title company.
             </p>
           </div>
         </div>
-        <div class="section-cta">
-          <a href="#lead" class="btn btn-primary">Get My Cash Offer</a>
-        </div>
       </section>
 
-      <!-- PROPERTIES (images lazy) -->
+      <!-- PROPERTIES -->
       <section class="section" id="properties">
         <h2 class="secondary-heading">A Look at Recent Sales</h2>
         <p class="hero-description about-description">
@@ -213,21 +126,43 @@
 
         <div class="properties-set">
           <div class="properties-card container-card">
-            <img loading="lazy" src="img/houses/delux.webp?v=3" alt="house" class="properties-img" />
+            <img src="img/houses/delux.webp?v=3" alt="house" class="properties-img" />
             <div class="properties-container">
               <p class="properties-loc">
-                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>Greater Cincinnati
+                <ion-icon name="location-outline"></ion-icon>Greater Cincinnati
               </p>
               <h3 class="ternary-heading">Updated Ranch</h3>
               <h3 class="hero-price properties-price">Closed in 10 days</h3>
               <div class="properties-card-container">
-                <div class="properties-cards"><ion-icon name="bed-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>3 Beds</div>
-                <div class="properties-cards"><ion-icon name="water-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>2 Baths</div>
-                <div class="properties-cards"><ion-icon name="golf-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>1,250 Sq Ft</div>
+                <div class="properties-cards">
+                  <ion-icon name="bed-outline" class="properties-card-logo"></ion-icon>
+                  3 Beds
+                </div>
+                <div class="properties-cards">
+                  <ion-icon name="water-outline" class="properties-card-logo"></ion-icon>
+                  2 Baths
+                </div>
+                <div class="properties-cards">
+                  <ion-icon name="golf-outline" class="properties-card-logo"></ion-icon>
+                  1,250 Sq Ft
+                </div>
               </div>
-              <p class="properties-description">Seller chose a quick, as-is sale to avoid repairs and showings.</p>
+              <p class="properties-description">
+                Seller chose a quick, as-is sale to avoid repairs and showings.
+              </p>
               <div class="properties-list-links">
-                <a href="#lead" class="btn btn-primary btn-lg">Get My Cash Offer</a>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  data-tally-open="mZ079A"
+                  data-tally-layout="modal"
+                  data-tally-auto-close="true"
+                  data-tally-hide-title="true"
+                  data-tally-overlay="true"
+                  aria-haspopup="dialog"
+                >
+                  GET MY CASH OFFER
+                </button>
               </div>
             </div>
           </div>
@@ -235,147 +170,149 @@
           <div class="properties-card container-card">
             <div class="properties-container">
               <p class="properties-loc">
-                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>Northern Kentucky
+                <ion-icon name="location-outline"></ion-icon>Northern Kentucky
               </p>
               <h3 class="ternary-heading">Townhome</h3>
               <h3 class="hero-price properties-price">Closed in 14 days</h3>
               <div class="properties-card-container">
-                <div class="properties-cards"><ion-icon name="bed-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>2 Beds</div>
-                <div class="properties-cards"><ion-icon name="water-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>2 Baths</div>
-                <div class="properties-cards"><ion-icon name="golf-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>1,050 Sq Ft</div>
+                <div class="properties-cards">
+                  <ion-icon name="bed-outline" class="properties-card-logo"></ion-icon>
+                  2 Beds
+                </div>
+                <div class="properties-cards">
+                  <ion-icon name="water-outline" class="properties-card-logo"></ion-icon>
+                  2 Baths
+                </div>
+                <div class="properties-cards">
+                  <ion-icon name="golf-outline" class="properties-card-logo"></ion-icon>
+                  1,050 Sq Ft
+                </div>
               </div>
-              <p class="properties-description">Owner wanted certainty before relocating—cash offer, firm date.</p>
+              <p class="properties-description">
+                Owner wanted certainty before relocating—cash offer, firm date.
+              </p>
               <div class="properties-list-links">
-                <a href="#lead" class="btn btn-primary btn-lg">Get My Cash Offer</a>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  data-tally-open="mZ079A"
+                  data-tally-layout="modal"
+                  data-tally-auto-close="true"
+                  data-tally-hide-title="true"
+                  data-tally-overlay="true"
+                  aria-haspopup="dialog"
+                >
+                  GET MY CASH OFFER
+                </button>
               </div>
             </div>
-            <img loading="lazy" src="img/houses/pent-house.jpg?v=3" alt="house" class="properties-img properties-right" />
+            <img src="img/houses/pent-house.jpg?v=3" alt="house" class="properties-img properties-right" />
           </div>
 
           <div class="properties-card container-card">
-            <img loading="lazy" src="img/houses/family-house.jpg?v=3" alt="house" class="properties-img" />
+            <img src="img/houses/family-house.jpg?v=3" alt="house" class="properties-img" />
             <div class="properties-container">
               <p class="properties-loc">
-                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>Tri-State Area
+                <ion-icon name="location-outline"></ion-icon>Tri-State Area
               </p>
               <h3 class="ternary-heading">Family Home</h3>
               <h3 class="hero-price properties-price">Closed in 12 days</h3>
               <div class="properties-card-container">
-                <div class="properties-cards"><ion-icon name="bed-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>4 Beds</div>
-                <div class="properties-cards"><ion-icon name="water-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>3 Baths</div>
-                <div class="properties-cards"><ion-icon name="golf-outline" class="properties-card-logo" aria-hidden="true"></ion-icon>1,850 Sq Ft</div>
+                <div class="properties-cards">
+                  <ion-icon name="bed-outline" class="properties-card-logo"></ion-icon>
+                  4 Beds
+                </div>
+                <div class="properties-cards">
+                  <ion-icon name="water-outline" class="properties-card-logo"></ion-icon>
+                  3 Baths
+                </div>
+                <div class="properties-cards">
+                  <ion-icon name="golf-outline" class="properties-card-logo"></ion-icon>
+                  1,850 Sq Ft
+                </div>
               </div>
-              <p class="properties-description">Estate sale—seller wanted a straightforward, private transaction.</p>
+              <p class="properties-description">
+                Estate sale—seller wanted a straightforward, private transaction.
+              </p>
               <div class="properties-list-links">
-                <a href="#lead" class="btn btn-primary btn-lg">Get My Cash Offer</a>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  data-tally-open="mZ079A"
+                  data-tally-layout="modal"
+                  data-tally-auto-close="true"
+                  data-tally-hide-title="true"
+                  data-tally-overlay="true"
+                  aria-haspopup="dialog"
+                >
+                  GET MY CASH OFFER
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- TESTIMONIALS (upgraded meta) -->
+      <!-- TESTIMONIALS -->
       <section class="section" id="testimonial">
         <h2 class="secondary-heading">What Sellers Say</h2>
         <div class="testimonial-container">
           <div class="testimonial-box">
             <div class="testimonial-card">
-              <img loading="lazy" src="img/testimonial/people-1.jpg?v=3" alt="seller" class="testimonial-img" />
+              <img src="img/testimonial/people-1.jpg?v=3" alt="seller" class="testimonial-img" />
               <div class="testimonial-description">
                 “Clear communication and a fair offer. We closed exactly when we needed.”
               </div>
-              <p class="testimonial-author">— Sarah J., Cincinnati OH</p>
+              <p class="testimonial-author">— Sarah J.</p>
             </div>
 
             <div class="testimonial-card">
-              <img loading="lazy" src="img/testimonial/people-2.jpg?v=3" alt="seller" class="testimonial-img" />
+              <img src="img/testimonial/people-2.jpg?v=3" alt="seller" class="testimonial-img" />
               <div class="testimonial-description">
                 “No repairs, no showings. Just a smooth sale. Highly recommend!”
               </div>
-              <p class="testimonial-author">— Michael R., Florence KY</p>
+              <p class="testimonial-author">— Michael R.</p>
             </div>
 
             <div class="testimonial-card">
-              <img loading="lazy" src="img/testimonial/people-3.jpg?v=3" alt="seller" class="testimonial-img" />
+              <img src="img/testimonial/people-3.jpg?v=3" alt="seller" class="testimonial-img" />
               <div class="testimonial-description">
                 “They did everything they promised. I picked the date and got it done.”
               </div>
-              <p class="testimonial-author">— James M., Covington KY</p>
+              <p class="testimonial-author">— James M.</p>
             </div>
 
             <div class="testimonial-card">
-              <img loading="lazy" src="img/testimonial/people-4.jpg?v=3" alt="seller" class="testimonial-img" />
+              <img src="img/testimonial/people-4.jpg?v=3" alt="seller" class="testimonial-img" />
               <div class="testimonial-description">
                 “Professional and honest from start to finish.”
               </div>
-              <p class="testimonial-author">— David M., Hamilton OH</p>
+              <p class="testimonial-author">— David M.</p>
             </div>
           </div>
 
           <div class="testimonial-box img-box">
             <div class="testimonial-photo-box">
-              <img loading="lazy" src="img/houses/hero.jpg?v=3" alt="house" class="testimonial-photo" />
+              <img src="img/houses/hero.jpg?v=3" alt="house" class="testimonial-photo" />
             </div>
             <div class="testimonial-photo-box">
-              <img loading="lazy" src="img/houses/delux.webp?v=3" alt="house" class="testimonial-photo" />
+              <img src="img/houses/delux.webp?v=3" alt="house" class="testimonial-photo" />
             </div>
             <div class="testimonial-photo-box">
-              <img loading="lazy" src="img/houses/pent-house.jpg?v=3" alt="house" class="testimonial-photo" />
+              <img src="img/houses/pent-house.jpg?v=3" alt="house" class="testimonial-photo" />
             </div>
             <div class="testimonial-photo-box">
-              <img loading="lazy" src="img/houses/family-house.jpg?v=3" alt="house" class="testimonial-photo" />
+              <img src="img/houses/family-house.jpg?v=3" alt="house" class="testimonial-photo" />
             </div>
           </div>
         </div>
-        <div class="section-cta">
-          <a href="#lead" class="btn btn-primary">Get My Cash Offer</a>
-        </div>
       </section>
 
-      <!-- “As seen in / Member of” strip (placeholders) -->
-      <section class="section brands" aria-label="Memberships and mentions">
-        <ul class="brand-strip">
-          <li aria-hidden="true"><svg viewBox="0 0 120 24" class="brand-svg"><rect width="120" height="24" rx="3"/></svg></li>
-          <li aria-hidden="true"><svg viewBox="0 0 120 24" class="brand-svg"><rect width="120" height="24" rx="3"/></svg></li>
-          <li aria-hidden="true"><svg viewBox="0 0 120 24" class="brand-svg"><rect width="120" height="24" rx="3"/></svg></li>
-          <li aria-hidden="true"><svg viewBox="0 0 120 24" class="brand-svg"><rect width="120" height="24" rx="3"/></svg></li>
-        </ul>
-      </section>
-
-      <!-- SERVICE AREA -->
-      <section class="section" id="service-area" aria-labelledby="sa-title">
-        <h2 class="secondary-heading" id="sa-title">Service Area</h2>
-        <p class="hero-description about-description">Cincinnati OH &amp; Northern Kentucky.</p>
-        <div class="sa-grid">
-          <div>
-            <h4>Ohio (Cincinnati MSA)</h4>
-            <ul class="sa-list">
-              <li>Hamilton, Butler, Warren, Clermont Counties</li>
-              <li>Cincinnati, Norwood, Blue Ash, Sharonville</li>
-              <li>Fairfield, Hamilton, Middletown, Mason</li>
-              <li>Lebanon, Loveland, Milford</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Northern Kentucky</h4>
-            <ul class="sa-list">
-              <li>Boone, Kenton, Campbell Counties</li>
-              <li>Florence, Erlanger, Elsmere, Burlington</li>
-              <li>Independence, Covington, Newport</li>
-              <li>Fort Thomas, Fort Mitchell, Alexandria</li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-cta">
-          <a href="#lead" class="btn btn-primary">Get My Cash Offer</a>
-        </div>
-      </section>
-
-      <!-- CONTACT (keep Tally embed as long form fallback) -->
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <h2 class="secondary-heading contact-heading" id="contact-title">Get Your Cash Offer</h2>
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <h2 class="secondary-heading contact-heading">Get Your Cash Offer</h2>
         <p class="hero-description about-description" style="text-align:center;max-width:720px;margin:0 auto 1rem;">
-          Prefer a longer form? Use this option. A team member will follow up within <strong>24–48 hours</strong>.
+          Share a few details below. A team member will follow up within <strong>24–48 hours</strong>.
         </p>
 
         <div class="contact-container">
@@ -383,13 +320,7 @@
             src="https://tally.so/embed/mZ079A?hideTitle=1&transparentBackground=1"
             width="100%" height="680" frameborder="0" marginheight="0" marginwidth="0"
             title="Cash Offer Form"
-            loading="lazy"
           ></iframe>
-        </div>
-        <div class="section-cta">
-          <a href="tel:+18643876051" class="btn btn-outline">
-            <ion-icon name="call-outline" style="vertical-align:middle;margin-right:6px;"></ion-icon> 864-387-6051
-          </a>
         </div>
       </section>
     </main>
@@ -397,24 +328,21 @@
     <!-- FOOTER -->
     <footer class="footer" id="footer">
       <div class="footer-container">
-        <a href="#top" aria-label="Back to top">
+        <a href="#">
           <img src="img/logo.webp?v=3" alt="Eagle RE Properties" class="footer-logo" />
         </a>
         <p class="copyright">© 2025 — Eagle RE Properties. All rights reserved.</p>
-        <p class="legal-links">
-          <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a>
-        </p>
       </div>
 
       <div class="footer-container social-container">
         <h3 class="footer-heading">Social</h3>
         <div class="social-links-list">
           <a href="https://www.facebook.com/profile.php?id=61579998956882" target="_blank" rel="noopener noreferrer" class="social-link">
-            <ion-icon name="logo-facebook" class="footer-social-logo" aria-hidden="true"></ion-icon>
+            <ion-icon name="logo-facebook" class="footer-social-logo"></ion-icon>
             <p class="social">Facebook</p>
           </a>
           <a href="https://www.instagram.com/eaglereproperties" target="_blank" rel="noopener noreferrer" class="social-link">
-            <ion-icon name="logo-instagram" class="footer-social-logo" aria-hidden="true"></ion-icon>
+            <ion-icon name="logo-instagram" class="footer-social-logo"></ion-icon>
             <p class="social">Instagram</p>
           </a>
         </div>
@@ -422,46 +350,18 @@
 
       <div class="footer-container">
         <h3 class="footer-heading">Contact</h3>
-        <address class="address">Cincinnati &amp; Northern Kentucky</address>
+        <address class="address">Cincinnati & Northern Kentucky</address>
         <address class="contact">
           <a class="social-link" href="mailto:info@eaglereproperties.net">info@eaglereproperties.net</a><br />
-          <a class="social-link" href="tel:+18643876051">
+          <a class="social-link" href="tel:+15138223099">
             <ion-icon name="call-outline" style="vertical-align:middle;margin-right:6px;"></ion-icon>
-            864-387-6051
+            (513) 822-3099
           </a>
         </address>
       </div>
     </footer>
 
-    <!-- Sticky mobile footer bar -->
-    <div class="sticky-bar" role="region" aria-label="Quick actions">
-      <a href="tel:+18643876051" id="callSticky" class="sticky-btn">
-        <ion-icon name="call-outline" aria-hidden="true"></ion-icon> Call
-      </a>
-      <a href="#lead" class="sticky-btn sticky-primary">Get Offer</a>
-    </div>
-
-    <!-- LocalBusiness JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": "Eagle RE Properties",
-      "url": "https://eaglereproperties.net/",
-      "telephone": "+1-864-387-6051",
-      "areaServed": [
-        {"@type":"AdministrativeArea","name":"Cincinnati, OH"},
-        {"@type":"AdministrativeArea","name":"Northern Kentucky"}
-      ],
-      "image": "https://eaglereproperties.net/img/logo.webp",
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61579998956882",
-        "https://www.instagram.com/eaglereproperties"
-      ]
-    }
-    </script>
-
-    <!-- App JS -->
-    <script src="assets/js/site.js" defer></script>
+    <!-- Tally modal script -->
+    <script defer src="https://tally.so/widgets/embed.js"></script>
   </body>
 </html>
